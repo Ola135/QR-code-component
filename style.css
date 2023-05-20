@@ -5,21 +5,28 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+:root {
+    --white: hsl(0, 0%, 100%);
+    --light-gray: hsl(212, 45%, 89%);
+}
+
+
 body {
     font-family: 'Outfit', sans-serif;
-    background-color: hsl(212, 45%, 89%);
+    background-color: var(--light-gray);
     min-height: 100vh;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .container {
     max-width: 360px;
-    margin: 0 auto;
 }
 
 .card{
-    background-color: hsl(0, 0%, 100%);
+    background-color: var(--white);
     padding: 18px;
     border-radius: 17px;
     text-align: center;
@@ -35,7 +42,7 @@ body {
     padding: 25px  8px;
 }
 
-.text h2{
+.text h1{
     color: hsl(218, 44%, 22%);
     padding-bottom: 15px;
 }
